@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherActivity">
+
+    <TextView
+        android:id="@+id/txtteacherlogin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#094AEF"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Teacher Login"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <ImageView
+        android:id="@+id/imgteacherloginlogo"
+        android:layout_width="249dp"
+        android:layout_height="287dp"
+        android:src="@drawable/teacherloginlogo"
+        android:layout_below="@id/txtteacherlogin"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgteacherloginlogo"
+        android:layout_marginTop="0dp"
+        android:hint="User Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColorHint="#000" />
+
+    <ImageView
+        android:id="@+id/imgusericon"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/imgteacherloginlogo"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="-11dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/etusername"
+        android:src="@drawable/studenticon" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgusericon"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColorHint="#000" />
+
+    <ImageView
+        android:id="@+id/imgpasswordicon"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/imgusericon"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/etusername"
+        android:src="@drawable/passwordicon" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#60ABF4"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

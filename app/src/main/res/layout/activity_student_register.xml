@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".StudentRegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3A3DF6"
+        android:gravity="center"
+        android:text="Student Register"
+        android:textColor="#E6E2E2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="#57EA80FC"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.448">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtSRfill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/fill_details"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etSRname"
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#fff"
+                android:hint="  Name"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSRfill" />
+
+            <EditText
+                android:id="@+id/etSRrollno"
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#fff"
+                android:hint="  Roll No"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSRname" />
+
+
+            <EditText
+                android:id="@+id/etSRmobile"
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#fff"
+                android:hint="  Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSRrollno" />
+
+            <EditText
+                android:id="@+id/etSRgender"
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#fff"
+                android:hint="  Gender"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSRmobile" />
+
+
+            <EditText
+                android:id="@+id/etSRemail"
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#fff"
+                android:hint="  Email ID"
+                android:inputType="textEmailAddress"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSRgender" />
+
+            <EditText
+                android:id="@+id/etSRpassword"
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#fff"
+                android:hint="  Password"
+                android:inputType="textPassword"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSRemail" />
+
+            <Spinner
+                android:id="@+id/spSRcourse"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="@+id/etSRpassword"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/spSRdepartment"
+                app:layout_constraintTop_toBottomOf="@+id/etSRpassword" />
+
+            <Spinner
+                android:id="@+id/spSRdepartment"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etSRpassword"
+                app:layout_constraintTop_toBottomOf="@+id/etSRpassword" />
+
+            <Spinner
+                android:id="@+id/spSRyear"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etSRpassword"
+                app:layout_constraintTop_toBottomOf="@+id/spSRdepartment" />
+
+
+            <Spinner
+                android:id="@+id/spSRsem"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="@+id/spSRcourse"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/spSRyear"
+                app:layout_constraintTop_toBottomOf="@+id/spSRcourse" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="170dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="120dp"
+                android:backgroundTint="#C401FB"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/spSRsem"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toEndOf="@+id/spSRyear"
+                app:layout_constraintTop_toBottomOf="@+id/etSRpassword"
+                app:layout_constraintVertical_bias="0.075" />
+
+            <TextView
+                android:id="@+id/SRbuildnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="Build 1.2.2"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

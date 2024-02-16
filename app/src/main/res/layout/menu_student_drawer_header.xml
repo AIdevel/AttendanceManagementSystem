@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="#098AED">
+
+    <ImageView
+        android:id="@+id/menuStudentDrawerHeader"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:src="@drawable/studentheadericon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:text="  Student Dashboard"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/menuStudentDrawerHeader"
+        android:textSize="20sp" />
+
+</RelativeLayout>

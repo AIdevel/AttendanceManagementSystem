@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <TextView
+        android:id="@+id/txtstudentlogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2135F4"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Student Login"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgstudentloginlogo"
+        android:layout_width="249dp"
+        android:layout_height="287dp"
+        android:layout_below="@id/txtstudentlogin"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/studentloginlogo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtstudentlogin"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgstudentloginlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etpassword"
+        app:layout_constraintTop_toBottomOf="@+id/imgstudentloginlogo" />
+
+    <ImageView
+        android:id="@+id/imgusericon"
+        android:layout_width="31dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/imgstudentloginlogo"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toRightOf="@id/etemail"
+        android:src="@drawable/studenticon"
+        app:layout_constraintBottom_toBottomOf="@+id/etemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgstudentloginlogo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgusericon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <ImageView
+        android:id="@+id/imgpasswordicon"
+        android:layout_width="29dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/imgusericon"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:layout_toRightOf="@id/etemail"
+        android:src="@drawable/passwordicon"
+        app:layout_constraintBottom_toBottomOf="@+id/etpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/btnlogin"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etrollno"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgstudentloginlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:hint="Roll No"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etpassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etpassword"
+        app:layout_constraintTop_toBottomOf="@+id/imgstudentloginlogo" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpassword"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#65C5FA"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginBottom="16dp"
+        android:text="Build 1.2.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

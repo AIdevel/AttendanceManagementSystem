@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menudrawerStudent"
+            android:icon="@drawable/studenticon"
+            android:title="@string/student" />
+        <item
+            android:id="@+id/menudrawerChangePassword"
+            android:icon="@drawable/changepasswordicon"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/menudrawerAboutus"
+            android:icon="@drawable/aboutusicon"
+            android:title="@string/about_us" />
+        <item
+            android:id="@+id/menudrawerLogout"
+            android:icon="@drawable/logouticon"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

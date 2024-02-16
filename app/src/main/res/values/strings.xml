@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AttendanceManagementSystem</string>
+    <string name="fill_details"><u>Fill Details</u></string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="closed_drawer">Closed Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="student">Student Dashboard</string>
+    <string name="change_password">Change Password</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">LogOut</string>
+    <string name="teacher">Teacher Dashboard</string>
+    <string name="Tchange_password">Change Password</string>
+    <string name="Tabout_us">About Us</string>
+    <string name="Tlogout">LogOut</string>
+    <string name="feedback">Feedback</string>
+</resources>

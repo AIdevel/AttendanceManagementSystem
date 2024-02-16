@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/txtrollcall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+         android:src="@drawable/starticon1"
+        />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/man"
+        android:layout_below="@id/txtrollcall"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imglogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="145dp"
+        android:backgroundTint="#7FD0FB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtbuildnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="build 1.2.2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:textColor="#000"
+        />
+
+
+
+</RelativeLayout>

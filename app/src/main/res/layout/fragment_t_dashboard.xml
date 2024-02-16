@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.TDashboardFragment"
+    android:layout_marginTop="20dp"
+    android:background="#063AF8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="336dp"
+            android:layout_height="174dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.050000012">
+
+            <RelativeLayout
+                android:layout_width="336dp"
+                android:layout_height="180dp"
+                android:background="#fff"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/fragmentDashboardTeacherIcon"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/studenticon" />
+
+                <TextView
+                    android:id="@+id/fragementDashboardTeacherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragmentDashboardTeacherIcon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="#fff"
+                    android:text="Name"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/fragmentDashboardTeacherPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragementDashboardTeacherName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Postion"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragmentDashboardTeacherCardTakeAttendance"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/attendance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Take Attendance" />
+
+            <Button
+                android:id="@+id/fragmentDashboardTeacherCardViewAttendanceClick"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Take" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragmentDashboardTeacherCardViewAttendance"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/attendance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="View Attendance" />
+
+            <Button
+                android:id="@+id/fragmentDashboardTeacherCardTakeAttendanceClick"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="View" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragmentDashboardTeacherCardViewHelp"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentDashboardTeacherCardTakeAttendance"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fragmentDashboardTeacherCardTakeAttendance"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentDashboardTeacherCardTakeAttendance"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/helpicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/fragmentDashboardTeacherCardViewHelpClick"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Help?" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragmentDashboardTeacherCardViewFeedback"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/fragmentDashboardTeacherCardViewAttendance"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fragmentDashboardTeacherCardViewAttendance"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentDashboardTeacherCardViewAttendance"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/feedbackicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Add Students"/>
+
+            <Button
+                android:id="@+id/fragmentDashboardTeacherCardViewFeedbackClick"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Add" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

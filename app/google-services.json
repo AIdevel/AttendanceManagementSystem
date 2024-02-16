@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711666669076",
+    "project_id": "student-detail-97b94",
+    "storage_bucket": "student-detail-97b94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711666669076:android:c4465e2f54f17c277b3901",
+        "android_client_info": {
+          "package_name": "com.RollCall.attendancemanagementsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHzMK_lcMpxp3bYDyzcyJ3ZBk2-8uXbvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

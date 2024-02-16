@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C0288D1"
+    tools:context=".TeacherRegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0C0FD6"
+        android:gravity="center"
+        android:text="Teacher Register"
+        android:textColor="#E6E2E2"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="#6C0FEF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.448">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtTRfill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/fill_details"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <EditText
+                android:id="@+id/etTRname"
+                android:layout_width="325dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="24dp"
+                android:background="#512DA8"
+                android:backgroundTint="#fff"
+                android:hint="  Name"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTRfill" />
+
+            <EditText
+                android:id="@+id/etTRposition"
+                android:layout_width="325dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#512DA8"
+                android:backgroundTint="#fff"
+                android:hint="  Position"
+                android:textSize="10dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTRname" />
+
+
+            <EditText
+                android:id="@+id/etTRmobile"
+                android:layout_width="325dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#512DA8"
+                android:backgroundTint="#fff"
+                android:hint="  Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTRposition" />
+
+            <EditText
+                android:id="@+id/etTRgender"
+                android:layout_width="325dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#512DA8"
+                android:backgroundTint="#fff"
+                android:hint="  Gender"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTRmobile" />
+
+
+            <EditText
+                android:id="@+id/etTRemail"
+                android:layout_width="325dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#512DA8"
+                android:backgroundTint="#fff"
+                android:hint="  Email ID"
+                android:inputType="textEmailAddress"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTRgender" />
+
+            <EditText
+                android:id="@+id/etTRpassword"
+                android:layout_width="325dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#512DA8"
+                android:backgroundTint="#fff"
+                android:hint="  Password"
+                android:inputType="textPassword"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTRemail" />
+
+            <Spinner
+                android:id="@+id/spTRcourse"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="16dp"
+                android:background="#F7FFFFFF"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="@+id/etTRpassword"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/spTRdepartment"
+                app:layout_constraintTop_toBottomOf="@+id/etTRpassword" />
+
+            <Spinner
+                android:id="@+id/spTRdepartment"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#F7FFFFFF"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etTRpassword"
+                app:layout_constraintTop_toBottomOf="@+id/etTRpassword" />
+
+            <Spinner
+                android:id="@+id/spTRyear"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#F7FFFFFF"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etTRpassword"
+                app:layout_constraintTop_toBottomOf="@+id/spTRdepartment" />
+
+            <Spinner
+                android:id="@+id/spTRsem"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="16dp"
+                android:background="#F7FFFFFF"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="@+id/spTRcourse"
+                app:layout_constraintStart_toEndOf="@+id/spTRyear"
+                app:layout_constraintTop_toBottomOf="@+id/spTRcourse" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="170dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="120dp"
+                android:backgroundTint="#C401FB"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/spTRsem"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toEndOf="@+id/spTRyear"
+                app:layout_constraintTop_toBottomOf="@+id/etTRpassword"
+                app:layout_constraintVertical_bias="0.050000012" />
+
+            <TextView
+                android:id="@+id/TRbuildnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="build 1.2.2"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:layout_constraintVertical_bias="0.74" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
